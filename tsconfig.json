@@ -1,4 +1,7 @@
 {
   "extends": "@tsconfig/node14",
-  "include": ["stacks", "src"]
+  "include": [
+    "infra",
+    "src"
+  ]
 }
