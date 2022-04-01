@@ -1,0 +1,5 @@
+{
+  "name": "aws-summit-stockholm-demo",
+  "region": "eu-west-1",
+  "main": "stacks/index.ts"
+}
