@@ -1,7 +1,12 @@
 {
   "extends": "@tsconfig/node14",
+  "compilerOptions": {
+    "esModuleInterop": true,
+  },
   "include": [
     "infra",
-    "src"
-  ]
+    "services",
+    "packages",
+    "test-utils"
+  ],
 }

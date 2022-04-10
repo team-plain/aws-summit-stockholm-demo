@@ -25,3 +25,7 @@ yarn-error.log*
 
 # IDEA
 .idea
+
+# Itest setup
+
+.itest*
