@@ -54,9 +54,9 @@ export class ApiStack extends sst.Stack {
     });
 
     props.dynamodbTable.dynamodbTable.grantReadWriteData(postWorkspaces);
-    props.dynamodbTable.dynamodbTable.grantReadWriteData(getWorkspace);
+    props.dynamodbTable.dynamodbTable.grantReadData(getWorkspace);
     props.dynamodbTable.dynamodbTable.grantReadWriteData(postCustomers);
-    props.dynamodbTable.dynamodbTable.grantReadWriteData(getCustomer);
+    props.dynamodbTable.dynamodbTable.grantReadData(getCustomer);
 
     this.addOutputs({
       ApiEndpoint: api.url,
