@@ -1,5 +1,5 @@
 import * as fs from 'fs';
-import { ExpiredTokenException, GetCallerIdentityCommand, STSClient } from '@aws-sdk/client-sts';
+import { GetCallerIdentityCommand, STSClient } from '@aws-sdk/client-sts';
 import { CloudFormationClient, DescribeStacksCommand } from '@aws-sdk/client-cloudformation';
 import { getStage } from './getStage';
 

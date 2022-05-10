@@ -11,11 +11,11 @@ export async function createCustomer(
   ctx: DatabaseContext & LoggingContext & WorkspaceContext,
   newCustomer: NewCustomer
 ): Promise<Result<Customer, WorkspaceDoesNotExistError>> {
-  const customer: Customer = {
+  const customer: Customer = Customer.parse({
     id: newId(),
     workspaceId: ctx.workspaceId,
     ...newCustomer,
-  };
+  });
   try {
     await createCustomerInDatabase(ctx, customer);
   } catch (e) {
